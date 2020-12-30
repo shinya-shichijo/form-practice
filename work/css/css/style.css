@@ -93,7 +93,6 @@ padding-top: 60px;
 }
 
 .radio-section {
-  display: flex;
   margin-top: 6px;
 }
 
@@ -113,6 +112,7 @@ padding-top: 60px;
   color: #545658;
   position: relative;
   padding: 3px 3px 3px 20px;
+  display: inline-block;
 }
 
 .radio-wrap span::before {
@@ -125,6 +125,18 @@ padding-top: 60px;
   position: absolute;
   top: 50%;
   left: 0;
+  transform: translateY(-50%);
+}
+
+.radio-btn:checked + span:after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #017cbf;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 4px;
   transform: translateY(-50%);
 }
 
