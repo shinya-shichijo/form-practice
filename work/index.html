@@ -5,9 +5,160 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FormPractice</title>
+  <link rel="stylesheet" href="./css/css/reset.css">
+  <link rel="stylesheet" href="./css/css/base.css">
+  <link rel="stylesheet" href="./css/css/style.css">
 </head>
 
 <body>
+  <div class="wrapper">
+    <div class="form-container">
+      <h1>フォーム作成</h1>
+      <div class="form-wrap">
+        <form action>
+          <div class="account">
+            <h2>アカウント作成</h2>
+            <h3 class="heading-title">個人情報</h3>
+            <div class="label-section">
+              <label for="first-name">名字<span class="required">※</span></label>
+            </div>
+            <input class="input-area" id="first-name" type="text" name="name" autocomplete required>
+            <div class="label-section">
+              <label for="last-name">名前<span class="required">※</span></label>
+            </div>
+            <input class="input-area" id="last-name" type="text" name="name" autocomplete required>
+            <div class="label-section">
+              <label for="birthday">生年月日<span class="required">※</span></label>
+            </div>
+            <div class="select-flex">
+              <div class="select-wrap">
+                <select class="select-area required" name="year" id="birthday">
+                  <option value disabled selected>年</option>
+                  <option value>2000</option>
+                  <option value>2001</option>
+                  <option value>2002</option>
+                  <option value>2003</option>
+                  <option value>2004</option>
+                  <option value>2005</option>
+                  <option value>2006</option>
+                  <option value>2007</option>
+                  <option value>2008</option>
+                  <option value>2009</option>
+                  <option value>2010</option>
+                </select>
+              </div>
+              <div class="select-wrap">
+                <select class="select-area required" name="month" id="birthday">
+                  <option value disabled selected>月</option>
+                  <option value>1</option>
+                  <option value>2</option>
+                  <option value>3</option>
+                  <option value>4</option>
+                  <option value>5</option>
+                  <option value>6</option>
+                  <option value>7</option>
+                  <option value>8</option>
+                  <option value>9</option>
+                  <option value>10</option>
+                  <option value>11</option>
+                  <option value>12</option>
+                </select>
+              </div>
+              <div class="select-wrap">
+                <select class="select-area required" name="day" id="birthday">
+                  <option value disabled selected>日</option>
+                  <option value>1</option>
+                  <option value>2</option>
+                  <option value>3</option>
+                  <option value>4</option>
+                  <option value>5</option>
+                  <option value>6</option>
+                  <option value>7</option>
+                  <option value>8</option>
+                  <option value>9</option>
+                  <option value>10</option>
+                </select>
+              </div>
+            </div>
+            <div class="label-section">
+              <label for="gender">性別<span class="required">※</span></label>
+            </div>
+            <div class="radio-section">
+              <div class="radio-wrap">
+                <input type="radio" name="man" id="gender" value="man" required>
+                <span>男性</span>
+              </div>
+              <div class="radio-wrap">
+                <input type="radio" name="man" id="gender" value=woman required>
+                <span>女性</span>
+              </div>
+              <div class="radio-wrap">
+                <input type="radio" name="man" id="gender" value="other" required>
+                <span>その他</span>
+              </div>
+            </div>
+            <div class="label-section">
+              <label for="job">職業</label>
+            </div>
+            <div class="select-wrap">
+              <select class="select-area" id="job" name="job">
+                <option value disabled selected>選択してください</option>
+                <option value>学生</option>
+                <option value>会社員</option>
+                <option value>主婦</option>
+                <option value>その他</option>
+              </select>
+            </div>
+            <h3 class="heading-title">アカウント作成</h3>
+            <div class="label-section">
+              <label for="account-name">アカウント名<span class="required">※</span></label>
+            </div>
+            <input class="input-area" id="account-name" type="text" required>
+            <div class="label-section">
+              <label for="email">メールアドレス<span class="required">※</span></label>
+            </div>
+            <input class="input-area" id="email"  type="email" autocomplete="email" required>
+            <div class="label-section">
+              <label for="password">パスワード<span class="required">※</span></label>
+            </div>
+            <input class="input-area" id="password" type="password" required>
+            <div class="label-section">
+              <label for="check-password">確認用パスワード<span class="required">※</span></label>
+            </div>
+            <input class="input-area" id="check-password" type="password" required>
+            <h3 class="heading-title">連絡先</h3>
+            <div class="label-section">
+              <label for="address">住所<span class="required">※</span></label>
+            </div>
+            <input class="input-area" id="address" type="text" required>
+            <div class="label-section">
+              <label for="tel">電話番号<span class="required">※</span></label>
+            </div>
+            <input class="input-area" id="tel" type="tel" autocomplete="tel" required>
+            <div class="subscription-container">
+              <h3 class="heading-title">購読情報</h3>
+              <div class="subscription-wrap label-section">
+                <input class="subscription-checkbox" id="email-magazine" type="checkbox">
+                <label class="subscription-label" for="email-magazine">メールマガジン</label>
+              </div>
+              <div class="subscription-wrap label-section">
+                <input class="subscription-checkbox" id="coupon" type="checkbox">
+                <label class="subscription-label" for="coupon">クーポン</label>
+              </div>
+            </div>
+            <div class="create-section">
+              <button class="create-btn" type="submit">アカウント作成</button>
+              <p>アカウントを作成することにより、
+                <a href="#">利用規約</a>
+                と
+                <a href="#">プライバシーポリシー</a>
+                に同意するものとします。</p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
 </body>
 
