@@ -74,9 +74,15 @@ section {
   margin-top: 6px;
 }
 
+.flex-item {
+  width: 100%;
+  position: relative;
+}
+
 .select-wrap {
   width: 100%;
   position: relative;
+  margin-top: 6px;
 }
 
 .select-area {
@@ -207,6 +213,8 @@ section {
 
 .create-btn:active {
   background: #fff;
+  color: #0170bf;
+  border: 1px solid #d9d9d9;
 }
 
 .create-section p {
