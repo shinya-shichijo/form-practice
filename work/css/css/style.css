@@ -71,12 +71,12 @@ section {
 }
 .select-flex {
   display: flex;
+  margin-top: 6px;
 }
 
 .select-wrap {
   width: 100%;
   position: relative;
-  margin-top: 6px;
 }
 
 .select-area {
